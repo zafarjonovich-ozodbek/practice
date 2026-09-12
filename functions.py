@@ -1,7 +1,7 @@
 '''FUNCTIONS
 (1) DEFINE vs CALL
 (2) Parametr vs Argument
-(3) Kewword & default arguments
+(3) Keyword & default arguments
 (4) Scope
 '''
 
@@ -27,3 +27,19 @@ greet("Ron")  # (1)
 
 result = greeting("Nate")  # (2)
 print(result)
+
+
+print("============ KEYWORD & DEFAULT arguments =============")
+# DEFINE - chaqirish
+
+
+def give_greet(name, age=21):  # default argument
+    return f"Hi {name}, you are {age} old years! "
+
+
+# CALL
+result3 = give_greet("Ron")
+print(result3)
+
+result4 = give_greet(name="Nate", age=23)  # keyword argument
+print(result4)
