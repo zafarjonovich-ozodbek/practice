@@ -1,6 +1,7 @@
-# Dunder(dubble underscore) --> dunder variable ("__builtins__"), dunder methos ("__init__")
-# "__builtins__ dunder" - bu "PYTHON"ning sistem variablesi xisoblanadi
-# "__init__ dunder" - bu maxsus method bo'lib, "PYTHON"ning negizi xisoblanadi
+# Dunder(dubble underscore) "PYTHON"da juda muxum ro'l o'ynaydi, "PYTHON"ning ishlashi quyidagilarga bog'liq:
+
+# --> dunder variable ("__builtins__") - bu "PYTHON"ning sistem variablesi xisoblanadi
+# --> dunder methods ("__init__") - bu maxsus method bo'lib, "PYTHON"ning negizi xisoblanadi
 
 # PYTHONning ishlashi "Dunder"ning maxsus
 # 'variable' va 'method'lariga asoslanadi
