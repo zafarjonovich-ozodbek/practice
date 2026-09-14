@@ -5,6 +5,8 @@
 '''
 
 print("========== What is Class? ===========")
+# CLASS - bu "object" yasovchi shablon, bir-biriga yaqin bo'lgan "Object"larni yasovchi bir shablon qurib olamiz, va bu shablon orqali istalgancha "Object" yaratsak bo'ladi
+# STRUCTURE > State; Constructor; Methods
 
 
 class Person():
@@ -23,7 +25,7 @@ class Person():
     def say_age(self):
         print(f"{self.name} says I am {self.age}")
 
-    @classmethod
+    @classmethod  # Static method yasash
     def explain(cls):
         print("static method property executed!")
 
@@ -33,25 +35,30 @@ person1 = Person("Justin", 25)
 person2 = Person("Martin", 35)
 person3 = Person("John", 22)
 
-# ordinary(oddiy) state
+# ORDINARY(oddiy) state
+# ordinary state - bu "Object" bilan birga yashovchi "state" xisoblanadi, ya'ni "Object" orqali chaqiriladi
 print("person1.name:", person1.name)
 
-# ordinary(oddiy) method
+# ORDINARY(oddiy) method
+# ordinary method -  bu "Object" bilan birga yashovchi "method" xisoblanadi, ya'ni "Object" orqali chaqiriladi
 person1.introduce()
 person3.say_age()
 
 
-# static state
+# STATIC state
+# static state - bu "Class" bilan yashovchi "state" xisoblanadi,  ya'ni "Class"nomi orqali chaqiriladi
 new_message = Person.message
 print(new_message)
 
-# static method
+# STATIC method
+# static method -  bu "Class" bilan yashovchi "method" xisoblanadi,  ya'ni "Class"nomi orqali chaqiriladi
 Person.explain()
 
 
 print("========== Special/Magic methods ===========")
 # "Python"ning eng kop ishlatiladigan "special/magic" methodlairi:
-# __init__, __new__, __str__, __call__, __getitem__, __eq__, __len__
+# __init__, __new__, __str__, __call__, __getitem__, __eq__, __len__ ....
+# Browser'dan "python magic methods"deb qidirsa chiqadi
 
 
 class Car():
@@ -59,9 +66,9 @@ class Car():
     description = "This class makes cars"
 
     # constructor
-    def __new__(cls, *args):
-        print("* __new__ *")
-        return super().__new__(cls)
+    # def __new__(cls, *args):      #bu  "__new__ method" ishlatilmasada ko'rnmas xolda shuyerda bo'ladi
+    #     print("*__new__*")
+    #     return super().__new__(cls)
 
     def __init__(self, name, age):
         self.name = name
