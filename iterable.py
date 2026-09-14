@@ -30,7 +30,7 @@ hobby = person_obj.get("hobby")  # "hobby" uchun "Error"emas "None"
 balance = person_obj.get("balance", 0)  # "None" o'rniga qiymat kiritdik
 print(f"the name: {name}, hobby: {hobby} and balance: {balance}")
 
-del person_obj["single"]  # "state"ni o'chirish uchun
+del person_obj["single"]  # "key va value"ni o'chirish uchun
 for key in person_obj:
     print(
         f"the key: {key} > value {person_obj[key]}")  # or {person_obj.get(key)
