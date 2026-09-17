@@ -37,10 +37,9 @@ car = dict(name="Tayota", year=2026, electric=True)
 # Agar bizga "Error" yoki "None" emas, xato payiti o'zimiz xoxlagan xato qiymat chiqishi uchun "Try & Except" blogi kerak bo'ladi
 try:
     print("passed here")  # shunchaki shuyerdan o'tkanligi
-    a = car.origin
     result = car["speed"]
     print("result:", result)
-except Exception as err:  # xato payiti qanday javob kelishi
+except KeyError as err:  # xato payiti qanday javob kelishi
     print("No speed state property found:", err)
 else:  # to'g'ri payiti
     print("Executed successfully without errors")
