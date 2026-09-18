@@ -5,7 +5,7 @@
 function countVowels(str) {
   const vowels = "aeiou";
   let count = 0;
-  lower = str.toLowerCase();
+  // lower = str.toLowerCase();
 
   for (const x of str) {
     if (x === "a" || x === "e" || x === "i" || x === "o" || x === "u") {
