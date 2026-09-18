@@ -1,3 +1,22 @@
+// ============== TASK K: ===============
+
+// Shunday function yozing, u string qabul qilsin va string ichidagi unli harflar sonini qaytarsin.
+// MASALAN: countVowels("string") return 1;
+function countVowels(str) {
+  const vowels = "aeiou";
+  let count = 0;
+  lower = str.toLowerCase();
+
+  for (const x of str) {
+    if (x === "a" || x === "e" || x === "i" || x === "o" || x === "u") {
+      count++;
+    }
+  }
+  return count;
+}
+result = countVowels("fullStack"); // 2
+console.log(result);
+
 // ============== TASK G: ===============
 
 // Yagona parametrga ega function tuzing.
@@ -8,18 +27,18 @@
 // Yuqoridagi misolda, birinchi indeksda 21 joylashgan.
 // Va bu 21 soni arrayning tarkibidagi birinchi eng katta son hisobladi va bizga uning indeksi 1 qaytadi.
 
-function maxIndex(arr) {
-  let index = 0;
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] > arr[index]) {
-      index = i;
-    }
-  }
+// function maxIndex(arr) {
+//   let index = 0;
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] > arr[index]) {
+//       index = i;
+//     }
+//   }
 
-  return index;
-}
+//   return index;
+// }
 
-console.log(maxIndex([4, 5, 29, 58, 11]));
+// console.log(maxIndex([4, 5, 29, 58, 11]));
 
 // TASK F:
 
