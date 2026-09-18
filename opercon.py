@@ -77,7 +77,7 @@ if not is_student:  # "not" - agar bo'lmasangiz
     print("Welcome here, do you want to be a student?")
 elif is_admin:
     print("Please go to this office!")
-# elif is_guest or is_parent: #pastdagi togriroq, sabab "or" bitta true'ni topsayoq operatsiyani tugatadi
+# elif is_parent or is_guest: #pastdagi togriroq, sabab "or" bitta true'ni topsayoq operatsiyani tugatadi
 elif is_guest or is_parent:  # "or" - yoki, "and" - va
     print("Waiting room is over there!")
 else:
