@@ -34,3 +34,51 @@ print(id(c), id(d))  # buyerda reference(id)ni tekshirsak boshqa boshqa boladi
 
 print("c is d", c is d)  # (false)"is" orqali referenceni tekshirish mumkun ekan
 print("c is e", c is e)  # (true) e va c ning qiymatlariham referenceham birxil
+
+
+print("============ CONDITINS =============")
+
+x = 5
+
+if x > 50:
+    print("Case A")
+elif x > 10:
+    print("Case B")
+else:
+    print("Case C")
+
+
+print("============ LOGICAL OPERATORS =============")
+
+age = 20
+
+person = None
+# if age > 18:
+#     person = "adult"
+# else:
+#     person = "minor"
+
+# print(person)
+
+
+# TERNARY OPERATORS
+person = "adult" if age > 18 else "minor"
+
+print(person)
+
+print("+++++++++=========")
+
+is_student = True
+is_admin = False
+is_guest = True
+is_parent = False
+
+if not is_student:  # "not" - agar bo'lmasangiz
+    print("Welcome here, do you want to be a student?")
+elif is_admin:
+    print("Please go to this office!")
+# elif is_guest or is_parent: #pastdagi togriroq, sabab "or" bitta true'ni topsayoq operatsiyani tugatadi
+elif is_guest or is_parent:  # "or" - yoki, "and" - va
+    print("Waiting room is over there!")
+else:
+    print("Other case")
